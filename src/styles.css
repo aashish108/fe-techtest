@@ -1,3 +1,47 @@
 body {
-  color: red;
+  color: black;
+}
+
+.numbers {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.number {
+  padding: 5px;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  line-height: 150px;
+  color: black;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+@media screen and (min-width:42.5625em) and (max-width:61.25em) {
+	.number {
+		width: 50%;
+		margin-bottom: 25px;
+	}
+}
+@media screen and (min-width:61.25em) {
+	.number {
+		width: 33%;
+		margin-bottom: 25px;
+	}
+}
+
+@media screen and (min-width:90em) {
+	body {
+		width: 50%;
+    margin: 0 auto;
+	}
+}
+.highlightNumber {
+	background-color: red;
 }
